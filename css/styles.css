@@ -1,0 +1,369 @@
+@charset  "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    color: #333;
+    background: #f7f7f7;
+    font-size: 1em;
+    font-family: Courier New; san-serif;
+    line-height: 135%;
+}
+
+a {
+    color: black;
+    transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -webkit-transition: all.6s ease;
+    -ms-transition: all.6s ease;
+}
+
+a:hover {
+    color: red;
+    transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -webkit-transition: all.6s ease;
+    -ms-transition: all.6s ease;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+}
+
+hr {
+    display: block;
+    border: 0;
+    height: 1px;
+    border-top: 1px solid #ccc;
+    padding: 0;
+}
+
+.left {float: left;}
+.right {float: right;}
+.clear {clear: both;}
+
+/* Selection Block */
+
+::selection {background-color: #f48b8b; color: white;}
+::-moz-selection {background-color: #f48b8b; color: white;}
+
+a:active {
+    color: #8ce4a6;
+}
+
+header, footer {
+    width: 98%;
+    background-color: white;
+    float: left;
+}
+
+header {
+    border-bottom: 2px solid black;
+    padding: 1%;
+}
+
+#logo {
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: Georgia; san-srift;
+    color: black;
+}
+
+.contact {
+    font-size: 1.5em;
+    font-family: Georgia; san-srift;
+    margin-left: 20px;
+}
+
+input[type=text].field {
+    border-radius: 5px;
+    border: 2px solid silver;
+    padding: 5px;
+    margin-left: 30px;
+}
+
+input[type=text].field:focus {border: 2px solid brown;}
+
+#menu {
+    color: #666;
+    font-family: Georgia; san-srift;
+    font-size: 1.3em;
+}
+
+#menu hr {
+    width: 700px;
+    max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#menuHrefs a {
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 20px;
+    color: blue;
+}
+
+#menuHrefs a:hover {background-color: #ececec;}
+
+/* Коды для блоков */
+
+#wrapper {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#wrapper #articles {
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#wrapper #articles article {
+    float: left;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #fafafa;
+    min-height: 400px;
+    height: 600px;
+}
+
+@media (min-width: 900px) {
+#wrapper #articles article {
+    width: 31.3333%;
+    margin-right: 2%;
+}}
+
+@media (max-width: 700px) and (min-width: 700px) {
+#wrapper #articles article {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 10px;
+}}
+
+@media (max-width: 699px) {
+#wrapper #articles article {
+    width: 100%;
+    margin-bottom: 10px;
+}}
+
+#wrapper #articles article img {
+    width: 100%;
+    height: 240px;
+    border-radius: 5px 5px 0px 0px;
+    margin-bottom: 10px;
+}
+
+#wrapper #articles article h2 {
+    width: 90%;
+    margin-left: 5%;
+    font-weight: bold;
+    font-size: 1.7em;
+    color: black;
+}
+
+#wrapper #articles article p {
+    width: 80%;
+    margin-left: 3%;
+    text-indent: 1.1em;
+    margin-top: 20px;
+}
+
+#wrapper #articles article a {
+    padding: 2px 5px;
+    background-color: #e7e7e7;
+    color: black;
+    font-weight: bold;
+    font-family: Georgia; sen-srift;
+    margin-left: 3%;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    float: right;
+}
+
+#wrapper #articles article a:hover {
+    background-color: silver;
+    color: #C66D00;
+} 
+
+/* Страница о нас */
+
+#abut_us {
+    width: 90%;
+    float: left;
+    background-color: #fafafa;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 1%;
+}
+
+/* Ð¡Ñ‚Ð¸Ð»Ð¸ Ð´Ð»Ñ Ð¾Ð±Ñ€Ð°Ñ‚Ð½Ð¾Ð¹ ÑÐ²ÑÐ·Ð¸ */
+
+form {
+    width: 60%;
+    margin-left: 20%;
+    float: left;
+}
+
+form label {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input {
+    border-radius: 5px;
+    border: 2px solid silver;
+    padding: 5px;
+    float: left;
+    clear: both;
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+form input:focus, form textarea:focus {border: 2px solid #5B5757;}
+
+form textarea {
+    font-size: 1.7em;
+    width: 60%;
+    float: left;
+    clear: both;
+    background-color: #fafafa;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px:
+}
+
+form #send {
+    float: left;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #E56868;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 2em;
+    color: #fff;
+}
+
+form #send:hover {background-color: #B3E568;}
+
+/* Коды для страницы регистрации */
+
+#wrapper #articles #registration {
+    float: all;
+    width: 35%;
+    height: 600px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #F0EC95;
+    margin-right: 1%;
+    min-height: 400px;
+}
+
+#wrapper #articles #registration h2 {
+    font-family: Georgia; san-srift;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#wrapper #articles #registration a {
+    color: blue;
+    font-weight: bold;
+    font-family: Georgia; san-srift;
+    padding: 2px;
+}
+
+#wrapper #articles #registration a:hover {background-color: #C6C6C6}
+
+#wrapper #articles #registration h2 {
+    font-family: Courier New; san-srift;
+    font-weight: bold;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#wrapper #articles #registration p {
+    font-family: Courier New; san-srift;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+#wrapper #articles #registration p a {
+    font-family: Courier New; san-srift;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+input[type=text].reginput {
+    width: 250px;
+    border-radius: 5px;
+    border: 2px solid silver;
+    padding: 6px;
+    margin-top: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* Коды для социального блока */
+
+#main_soc_block {
+    width: 100%;
+    padding: 2% 0%;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    margin: 20px 0px;
+    float: left;
+    background: url(../img/socblockfon.jpg) repeat-x center;
+    height: 150px;
+}
+
+#main_soc_block_in {
+    text-align: center;
+    padding: 1%;
+    height: 125px;
+    width: 400px;
+    background-color: #DDDDDD;
+    color: black;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 7px;
+    max-width: 98%;
+
+}
+
+#main_soc_block_in a {
+    float: left;
+    padding: 5px 10px;
+    background-color: #5B8797;
+    color: black;
+    font-weight: bold;
+    font-family: Georgia; san-srift;
+    margin-left: 35%;
+    margin-top: 15px;
+}
+
+#main_soc_block_in a:hover {
+    color: #C66D00;
+}
+
+/* Коды для футера */
+
+footer {
+    border-top: 1px solid black;
+    margin-top: 7%;
+    padding: 1%;
+    padding-bottom: 5%;
+}
